@@ -35,7 +35,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - DRONE_RPC_HOST=drone.mental-doctors.com
+      - DRONE_RPC_HOST={DRONE_SERVER_HOST}
       - DRONE_RPC_PROTO=https
       - DRONE_RUNNER_NETWORKS=drone
       - DRONE_RUNNER_CAPACITY=8
